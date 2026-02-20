@@ -34,9 +34,6 @@ public class WhileLoop {
         int N2=5;
         int sum1 =N2*(N2+1)/2;
         System.out.println(sum1);
-
-
-
     }
 }
 
