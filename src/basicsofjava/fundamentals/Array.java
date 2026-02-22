@@ -1,5 +1,5 @@
 package basicsofjava.fundamentals;
-import java.util.Arrays;
+import java.util.*;
 public class Array
 {
     public static void main(String[] args)
@@ -24,5 +24,22 @@ public class Array
         int[] arr2;
         arr2=new int[]{100,101,102};
         System.out.println(Arrays.toString(arr2));
+
+        System.out.println("CREATING ARRAY FROM USER INPUT");
+        Scanner sc=new Scanner(System.in);
+        int[] arr3=new int[5];
+        for(int i=0;i<arr.length;i++)
+        {
+            arr3[i]=sc.nextInt();
+        }
+        System.out.println("THE ARRAY ELEMENTS ARE :");
+        System.out.println("PRINTING ELEMENTS USING FUNCTION:");
+        System.out.println(Arrays.toString(arr3));
+
+        System.out.println("PRINTING ELEMENTS USING FOR LOOP:");
+        for(int i=0;i<arr3.length;i++)
+        {
+            System.out.print(arr3[i]+" ");
+        }
     }
 }
