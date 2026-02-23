@@ -41,5 +41,8 @@ public class Array
         {
             System.out.print(arr3[i]+" ");
         }
+        System.out.println("Different data types using array:");
+        String[] arr4={"abc","def","ghi"};
+        Float[] arr5={1.0,2.0,3.0,4.0};
     }
 }
