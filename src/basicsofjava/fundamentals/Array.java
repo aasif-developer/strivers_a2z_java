@@ -43,6 +43,10 @@ public class Array
         }
         System.out.println("Different data types using array:");
         String[] arr4={"abc","def","ghi"};
-        Float[] arr5={1.0,2.0,3.0,4.0};
+        Double[] arr5={99.1,99.2,99.3,99.4};
+        Float[] arr6={1.0f,2.0f,3.0f,4.0f};
+        System.out.println("STRING DATA TYPE :"+Arrays.toString(arr4));
+        System.out.println("DECIMAL DATA TYPE :"+Arrays.toString(arr5));
+        System.out.println("FLOAT DATA TYPE :"+Arrays.toString(arr6));
     }
 }
