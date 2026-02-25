@@ -48,5 +48,17 @@ public class Array
         System.out.println("STRING DATA TYPE :"+Arrays.toString(arr4));
         System.out.println("DECIMAL DATA TYPE :"+Arrays.toString(arr5));
         System.out.println("FLOAT DATA TYPE :"+Arrays.toString(arr6));
+        System.out.println("ARRAY OPERATIONS:");
+        System.out.println("SORTING OF ARRAY");
+        int[] arr7 = {5,2,9,1,3};
+        Arrays.sort(arr);
+        System.out.println(Arrays.toString(arr7));
+        System.out.println("SLICING OF ARRAY");
+        int[] arr8 = {10,20,30,40,50};
+        int[] sub = Arrays.copyOfRange(arr8, 1, 4);
+        System.out.println(Arrays.toString(sub));
+        System.out.println("UPDATING OF ARRAY");
+        arr8[0]=100;
+        System.out.println(Arrays.toString(arr8));
     }
 }
