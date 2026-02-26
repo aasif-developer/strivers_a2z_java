@@ -60,5 +60,17 @@ public class Array
         System.out.println("UPDATING OF ARRAY");
         arr8[0]=100;
         System.out.println(Arrays.toString(arr8));
+        System.out.println("REVERSING AN ARRAY");
+        int[] arr9= {10, 20, 30, 40, 50};
+        int left = 0;
+        int right = arr9.length - 1;
+        while (left < right) {
+            int temp = arr9[left];
+            arr9[left] = arr9[right];
+            arr9[right] = temp;
+            left++;
+            right--;
+        }
+        System.out.println(Arrays.toString(arr9));
     }
 }
