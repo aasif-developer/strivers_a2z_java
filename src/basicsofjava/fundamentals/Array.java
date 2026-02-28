@@ -76,7 +76,13 @@ public class Array
 
         System.out.println("ARRAY OPERATIONS");
         System.out.println("1.TRAVERSAL OF ARRAY");
-        int[] array={10,20,30,40,50};
+        System.out.println("ENTER ARRAY ELEMENTS");
+        int[] arr=new int[5];
+        for(int i=0;i<arr.length;i++)
+            {
+                sc.nextInt();
+            }
+        
         for(int i=0;i<array.length;i++)
         {
             System.out.print(array[i]+" ");
