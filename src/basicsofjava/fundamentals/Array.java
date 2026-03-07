@@ -72,24 +72,39 @@ public class Array
 //            right--;
 //        }
 //        System.out.println(Arrays.toString(arr9));
+//
+//
+//        System.out.println("ARRAY OPERATIONS");
+//        System.out.println("1.TRAVERSAL OF ARRAY");
+//        int[] array={10,20,30,40,50};
+//        for(int i=0;i<array.length;i++)
+//        {
+//            System.out.print(array[i]+" ");
+//        }
+//        System.out.println();
+//        System.out.println("1.1 SUM OF ARRAY");
+//        int[] marks={99,98,97,100,100,99};
+//        int sum=0;
+//        for(int i=0;i<marks.length;i++)
+//        {
+//            sum=sum+marks[i];
+//        }
+//        System.out.println("TOTAL MARKS = "+sum);
+//        System.out.println("AVERAGE = "+(sum/marks.length));
 
-
-        System.out.println("ARRAY OPERATIONS");
-        System.out.println("1.TRAVERSAL OF ARRAY");
-        int[] array={10,20,30,40,50};
-        for(int i=0;i<array.length;i++)
+        System.out.println("NORMAL METHOD");
+        Scanner obj=new Scanner(System.in);
+        System.out.print("ENTER NUMBER OF SUBJECTS :");
+        int n=obj.nextInt();
+        int sum = 0;
+        for(int i=1;i<=n;i++)
         {
-            System.out.print(array[i]+" ");
+            System.out.print("ENTER THE MARK OF SUBJECT "+i+" :");
+            int marks=obj.nextInt();
+            sum=sum+marks;
         }
-        System.out.println();
-        System.out.println("1.1 SUM OF ARRAY");
-        int[] marks={99,98,97,100,100,99};
-        int sum=0;
-        for(int i=0;i<marks.length;i++)
-        {
-            sum=sum+marks[i];
-        }
-        System.out.println("TOTAL MARKS = "+sum);
-        System.out.println("AVERAGE = "+(sum/marks.length));
+        System.out.println("THE SUM IS :"+sum);
+        float avg = sum/n;
+        System.out.println("PERCENTAGE :"+avg);
     }
 }
