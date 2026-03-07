@@ -1,110 +1,126 @@
 package basicsofjava.fundamentals;
+
 import java.util.*;
-public class Array
-{
-    public static void main(String[] args)
-    {
-//        System.out.println("CREATING AN ARRAY USING FOR LOOP");
-//        int[] arr=new int[5];
-//        for(int i=0;i<arr.length;i++)
-//        {
-//            arr[i]=i;
-//            System.out.println(arr[i]);
-//        }
-//        System.out.println("CREATING AN ARRAY MANUALLY");
-//        int[] arr1={10,20,30,40,50};
-//        System.out.println(Arrays.toString(arr1));
-//        System.out.println("LENGTH OF THE ARRAY ="+arr.length);
-//        System.out.println("ELEMENTS OF THE ARRAY");
-//        for(int i=0;i<arr.length;i++)
-//        {
-//            System.out.println(arr1[i]);
-//        }
-//        System.out.println("CREATING AN ARRAY USING NEW KEYWORD");
-//        int[] arr2;
-//        arr2=new int[]{100,101,102};
-//        System.out.println(Arrays.toString(arr2));
-//
-//        System.out.println("CREATING ARRAY FROM USER INPUT");
-//        Scanner sc=new Scanner(System.in);
-//        int[] arr3=new int[5];
-//        for(int i=0;i<arr.length;i++)
-//        {
-//            arr3[i]=sc.nextInt();
-//        }
-//        System.out.println("THE ARRAY ELEMENTS ARE :");
-//        System.out.println("PRINTING ELEMENTS USING FUNCTION:");
-//        System.out.println(Arrays.toString(arr3));
-//
-//        System.out.println("PRINTING ELEMENTS USING FOR LOOP:");
-//        for(int i=0;i<arr3.length;i++)
-//        {
-//            System.out.print(arr3[i]+" ");
-//        }
-//        System.out.println("Different data types using array:");
-//        String[] arr4={"abc","def","ghi"};
-//        Double[] arr5={99.1,99.2,99.3,99.4};
-//        Float[] arr6={1.0f,2.0f,3.0f,4.0f};
-//        System.out.println("STRING DATA TYPE :"+Arrays.toString(arr4));
-//        System.out.println("DECIMAL DATA TYPE :"+Arrays.toString(arr5));
-//        System.out.println("FLOAT DATA TYPE :"+Arrays.toString(arr6));
-//        System.out.println("ARRAY OPERATIONS:");
-//        System.out.println("SORTING OF ARRAY");
-//        int[] arr7 = {5,2,9,1,3};
-//        Arrays.sort(arr);
-//        System.out.println(Arrays.toString(arr7));
-//        System.out.println("SLICING OF ARRAY");
-//        int[] arr8 = {10,20,30,40,50};
-//        int[] sub = Arrays.copyOfRange(arr8, 1, 4);
-//        System.out.println(Arrays.toString(sub));
-//        System.out.println("UPDATING OF ARRAY");
-//        arr8[0]=100;
-//        System.out.println(Arrays.toString(arr8));
-//        System.out.println("REVERSING AN ARRAY");
-//        int[] arr9= {10, 20, 30, 40, 50};
-//        int left = 0;
-//        int right = arr9.length - 1;
-//        while (left < right) {
-//            int temp = arr9[left];
-//            arr9[left] = arr9[right];
-//            arr9[right] = temp;
-//            left++;
-//            right--;
-//        }
-//        System.out.println(Arrays.toString(arr9));
-//
-//
-//        System.out.println("ARRAY OPERATIONS");
-//        System.out.println("1.TRAVERSAL OF ARRAY");
-//        int[] array={10,20,30,40,50};
-//        for(int i=0;i<array.length;i++)
-//        {
-//            System.out.print(array[i]+" ");
-//        }
-//        System.out.println();
-//        System.out.println("1.1 SUM OF ARRAY");
-//        int[] marks={99,98,97,100,100,99};
-//        int sum=0;
-//        for(int i=0;i<marks.length;i++)
-//        {
-//            sum=sum+marks[i];
-//        }
-//        System.out.println("TOTAL MARKS = "+sum);
-//        System.out.println("AVERAGE = "+(sum/marks.length));
+
+public class Array {
+    public static void main(String[] args) {
+
+        System.out.println("CREATING AN ARRAY USING FOR LOOP");
+        int[] arr = new int[5];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = i;
+            System.out.println(arr[i]);
+        }
+
+        System.out.println("CREATING AN ARRAY MANUALLY");
+        int[] arr1 = {10, 20, 30, 40, 50};
+        System.out.println(Arrays.toString(arr1));
+
+        System.out.println("LENGTH OF THE ARRAY = " + arr.length);
+
+        System.out.println("ELEMENTS OF THE ARRAY");
+        for (int i = 0; i < arr1.length; i++) {
+            System.out.println(arr1[i]);
+        }
+
+        System.out.println("CREATING AN ARRAY USING NEW KEYWORD");
+        int[] arr2;
+        arr2 = new int[]{100, 101, 102};
+        System.out.println(Arrays.toString(arr2));
+
+        System.out.println("CREATING ARRAY FROM USER INPUT");
+        Scanner sc = new Scanner(System.in);
+        int[] arr3 = new int[5];
+        for (int i = 0; i < arr3.length; i++) {
+            arr3[i] = sc.nextInt();
+        }
+
+        System.out.println("THE ARRAY ELEMENTS ARE :");
+        System.out.println("PRINTING ELEMENTS USING FUNCTION:");
+        System.out.println(Arrays.toString(arr3));
+
+        System.out.println("PRINTING ELEMENTS USING FOR LOOP:");
+        for (int i = 0; i < arr3.length; i++) {
+            System.out.print(arr3[i] + " ");
+        }
+        System.out.println();
+
+        System.out.println("Different data types using array:");
+        String[] arr4 = {"abc", "def", "ghi"};
+        Double[] arr5 = {99.1, 99.2, 99.3, 99.4};
+        Float[] arr6 = {1.0f, 2.0f, 3.0f, 4.0f};
+
+        System.out.println("STRING DATA TYPE :" + Arrays.toString(arr4));
+        System.out.println("DECIMAL DATA TYPE :" + Arrays.toString(arr5));
+        System.out.println("FLOAT DATA TYPE :" + Arrays.toString(arr6));
+
+        System.out.println("ARRAY OPERATIONS:");
+
+        System.out.println("SORTING OF ARRAY");
+        int[] arr7 = {5, 2, 9, 1, 3};
+        Arrays.sort(arr7);
+        System.out.println(Arrays.toString(arr7));
+
+        System.out.println("SLICING OF ARRAY");
+        int[] arr8 = {10, 20, 30, 40, 50};
+        int[] sub = Arrays.copyOfRange(arr8, 1, 4);
+        System.out.println(Arrays.toString(sub));
+
+        System.out.println("UPDATING OF ARRAY");
+        arr8[0] = 100;
+        System.out.println(Arrays.toString(arr8));
+
+        System.out.println("REVERSING AN ARRAY");
+        int[] arr9 = {10, 20, 30, 40, 50};
+        int left = 0;
+        int right = arr9.length - 1;
+
+        while (left < right) {
+            int temp = arr9[left];
+            arr9[left] = arr9[right];
+            arr9[right] = temp;
+            left++;
+            right--;
+        }
+        System.out.println(Arrays.toString(arr9));
+
+        System.out.println("ARRAY OPERATIONS");
+        System.out.println("1.TRAVERSAL OF ARRAY");
+
+        int[] array = {10, 20, 30, 40, 50};
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+        }
+        System.out.println();
+
+        System.out.println("1.1 SUM OF ARRAY");
+        int[] marksArray = {99, 98, 97, 100, 100, 99};
+        int sum = 0;
+
+        for (int i = 0; i < marksArray.length; i++) {
+            sum = sum + marksArray[i];
+        }
+
+        System.out.println("TOTAL MARKS = " + sum);
+        System.out.println("AVERAGE = " + (sum / marksArray.length));
 
         System.out.println("NORMAL METHOD");
-        Scanner obj=new Scanner(System.in);
-        System.out.print("ENTER NUMBER OF SUBJECTS :");
-        int n=obj.nextInt();
-        int sum = 0;
-        for(int i=1;i<=n;i++)
-        {
-            System.out.print("ENTER THE MARK OF SUBJECT "+i+" :");
-            int marks=obj.nextInt();
-            sum=sum+marks;
+        System.out.print("ENTER NUMBER OF SUBJECTS : ");
+        int n = sc.nextInt();
+
+        int total = 0;
+
+        for (int i = 1; i <= n; i++) {
+            System.out.print("ENTER THE MARK OF SUBJECT " + i + " : ");
+            int mark = sc.nextInt();
+            total = total + mark;
         }
-        System.out.println("THE SUM IS :"+sum);
-        float avg = sum/n;
-        System.out.println("PERCENTAGE :"+avg);
+
+        System.out.println("THE SUM IS :" + total);
+
+        float avg = (float) total / n;
+        System.out.println("PERCENTAGE :" + avg);
+
+        sc.close();
     }
 }
