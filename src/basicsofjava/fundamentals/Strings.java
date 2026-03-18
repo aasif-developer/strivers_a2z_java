@@ -1,6 +1,6 @@
 package basicsofjava.fundamentals;
 import java.util.*;
-public class Strings{
+public class Strings {
     public static void main(String[] args) {
 
         System.out.println("1. CREATING OF STRINGS");
@@ -35,6 +35,86 @@ public class Strings{
         System.out.println("EXPLANTION : \n concat() method creates a new String and make it as JAVA DEVELOPER \n" +
                 "whereas s remain JAVA and S remains DEVELOPER its not changed as Strings are immutable");
 
+                String str = "Java";
+                System.out.println("1. str.length() - returns length of string");
+                System.out.println("Length of the string \"" + str + "\" = " + str.length());
+
+                System.out.println();
+
+                System.out.println("2. str.toLowerCase() - converts to lowercase");
+                System.out.println("Lowercase of \"" + str + "\" = " + str.toLowerCase());
+
+                System.out.println();
+
+                System.out.println("3. str.toUpperCase() - converts to uppercase");
+                System.out.println("Uppercase of \"" + str + "\" = " + str.toUpperCase());
+
+                System.out.println();
+
+                System.out.println("4. str.trim() - removes leading and trailing spaces");
+                String s11 = "   Java   ";
+                System.out.println("After trimming \"" + s11 + "\" = \"" + s11.trim() + "\"");
+
+                System.out.println();
+
+                System.out.println("5. str.substring(start) - substring from index");
+                System.out.println("Substring of \"" + str + "\" from index 2 = " + str.substring(2));
+
+                System.out.println();
+
+                System.out.println("6. str.substring(start,end) - substring range");
+                System.out.println("Substring of \"" + str + "\" from index 1 to 3 = " + str.substring(1,3));
+
+                System.out.println();
+
+                System.out.println("7. str.replace('a','x') - replace characters");
+                System.out.println("After replacing 'a' with 'x' in \"" + str + "\" = " + str.replace('a','x'));
+
+                System.out.println();
+
+                System.out.println("8. str.startsWith(\"Ja\") - checks start");
+                System.out.println("Does \"" + str + "\" start with \"Ja\"? " + str.startsWith("Ja"));
+
+                System.out.println();
+
+                System.out.println("9. str.endsWith(\"va\") - checks end");
+                System.out.println("Does \"" + str + "\" end with \"va\"? " + str.endsWith("va"));
+
+                System.out.println();
+
+                System.out.println("10. str.charAt(index) - returns character");
+                System.out.println("Character at index 2 in \"" + str + "\" = " + str.charAt(2));
+
+                System.out.println();
+
+                System.out.println("11. str.indexOf(\"av\") - first occurrence");
+                System.out.println("Index of \"av\" in \"" + str + "\" = " + str.indexOf("av"));
+
+                System.out.println();
+
+                System.out.println("12. str.indexOf(\"a\",2) - search from index");
+                System.out.println("Index of 'a' in \"" + str + "\" from index 2 = " + str.indexOf("a",2));
+
+                System.out.println();
+
+                System.out.println("13. str.lastIndexOf(\"a\") - last occurrence");
+                System.out.println("Last index of 'a' in \"" + str + "\" = " + str.lastIndexOf("a"));
+
+                System.out.println();
+
+                System.out.println("14. str.lastIndexOf(\"a\",2) - backward search");
+                System.out.println("Last index of 'a' before index 2 in \"" + str + "\" = " + str.lastIndexOf("a",2));
+
+                System.out.println();
+
+                System.out.println("15. str.equals(\"Java\") - compares strings");
+                System.out.println("Is \"" + str + "\" equal to \"Java\"? " + str.equals("Java"));
+
+                System.out.println();
+
+                System.out.println("16. str.equalsIgnoreCase(\"java\") - ignores case");
+                System.out.println("Is \"" + str + "\" equal to \"java\" (ignore case)? " + str.equalsIgnoreCase("java"));
 
     }
 }
+
