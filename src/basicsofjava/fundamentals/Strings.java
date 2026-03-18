@@ -114,6 +114,61 @@ public class Strings {
 
                 System.out.println("16. str.equalsIgnoreCase(\"java\") - ignores case");
                 System.out.println("Is \"" + str + "\" equal to \"java\" (ignore case)? " + str.equalsIgnoreCase("java"));
+                System.out.println();
+        System.out.println("ADDITONAL STRING METHODS");
+        System.out.println();
+
+        String name = "Java";
+
+        System.out.println("1. contains() - checks substring exists");
+        System.out.println("Does \"" + name + "\" contain \"av\"? " + name.contains("av"));
+
+        System.out.println();
+
+        System.out.println("2. split() - converts string to array");
+        String s12 = "I am Java";
+        String[] words = s12.split(" ");
+        System.out.println("Splitting \"" + s12 + "\" = " + Arrays.toString(words));
+
+        System.out.println();
+
+        System.out.println("3. toCharArray() - converts string to char array");
+        char[] arr = name.toCharArray();
+        System.out.println("Character array of \"" + name + "\" = " + Arrays.toString(arr));
+
+        System.out.println();
+
+        System.out.println("4. compareTo() - compares lexicographically");
+        System.out.println("Comparing \"apple\" with \"banana\" = " + "apple".compareTo("banana"));
+
+        System.out.println();
+
+        System.out.println("5. compareToIgnoreCase() - compares ignoring case");
+        System.out.println("Comparing \"Java\" with \"java\" = " + "Java".compareToIgnoreCase("java"));
+
+        System.out.println();
+
+        System.out.println("6. isEmpty() - checks if string is empty");
+        String s13 = "";
+        System.out.println("Is the string \"" + s13 + "\" empty? " + s13.isEmpty());
+
+        System.out.println();
+
+        System.out.println("7. isBlank() - checks empty or spaces");
+        String s3 = "   ";
+        System.out.println("Is the string \"   \" blank? " + s3.isBlank());
+
+        System.out.println();
+
+        System.out.println("8. concat() - joins strings");
+        System.out.println("After concatenation: " + name.concat(" World"));
+
+        System.out.println();
+
+        System.out.println("9. valueOf() - converts data type to string");
+        int x = 10;
+        String s4 = String.valueOf(x);
+        System.out.println("Converting int " + x + " to String = " + s4);
 
     }
 }
