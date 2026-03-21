@@ -5,7 +5,7 @@ public class Strings {
 
         System.out.println("1. CREATING OF STRINGS");
 
-        String s1 = "Hello";
+        String s1 = "HELLO";
         String s2 = new String("Hello");
 
         System.out.println("String s1 = " + s1);
@@ -115,10 +115,11 @@ public class Strings {
                 System.out.println("16. str.equalsIgnoreCase(\"java\") - ignores case");
                 System.out.println("Is \"" + str + "\" equal to \"java\" (ignore case)? " + str.equalsIgnoreCase("java"));
                 System.out.println();
+
         System.out.println("ADDITONAL STRING METHODS");
         System.out.println();
 
-        String name = "Java";
+        String name = "JAVA DEVELOPER";
 
         System.out.println("1. contains() - checks substring exists");
         System.out.println("Does \"" + name + "\" contain \"av\"? " + name.contains("av"));
@@ -169,7 +170,6 @@ public class Strings {
         int x = 10;
         String s4 = String.valueOf(x);
         System.out.println("Converting int " + x + " to String = " + s4);
-
     }
 }
 
